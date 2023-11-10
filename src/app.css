@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    
+    * {
+        font-family: "Lato", sans-serif;
+    }
+    body {
+        @apply bg-[#23394A]
+    }
+    .container {
+        @apply max-w-[100vw] h-[100svh] md:flex ;
+    }
+
+    /* .container div {
+        @apply 
+    } */
+
+    .layout-bg {
+        @apply relative hidden md:block flex-1
+    }
+
+    .layout-bg-img {
+        @apply absolute w-[100%] h-[100vh]
+    }
+
+    .form-section-container {
+        @apply bg-[#23394A] flex flex-col justify-center text-white md:basis-3/5;
+    }
+
+    .form-section-container > div {
+        @apply w-[340px] p-12 md:p-0  mx-auto my-auto;
+    }
+
+    .logo-desktop {
+        @apply absolute w-40  -translate-x-[50%] -translate-y-[50%] text-center top-[50vh] left-[50%];
+    }
+
+    .logo-mobile {
+        @apply w-28 md:hidden  mb-12 text-center top-8;
+    }
+
+    .input-field {
+        @apply my-3 w-[100%] rounded-md bg-[#445867] placeholder:text-[#DEDBDB] border-0 placeholder:font-thin focus:outline-none focus:ring-0 focus:bg-white text-slate-800
+    }
+
+    .checkbox {
+        @apply w-4 h-4 bg-slate-500 ring-white transition duration-300 rounded ring-2 ring-offset-0 focus:outline-none focus:ring-gray-200 text-gray-700
+    }
+
+    .checkbox-container {
+        @apply flex items-center space-x-2
+    }
+
+    .button {
+        @apply bg-white text-slate-800 px-6 py-2 rounded-md my-4;
+    }
+
+    .link-text {
+        @apply hover:underline cursor-pointer;
+    }
+
+    .footer-links {
+        @apply flex space-x-2 text-sm items-end;
+    }
+}
